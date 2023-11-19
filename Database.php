@@ -32,6 +32,16 @@ class Database
             die("Connection failed: " . $this->conn->connect_error);
         }
             $this->conn->query($query);
+            $this->conn->close();
             return true;
         }
+    public function getDate(){
+        $query = 'SELECT ' .'*'. ' FROM securities WHERE id = ' . 1;
+        $rez = $this->conn->query($query);
+        if (!$rez) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
+        $rez = $rez->fetch_assoc();
+        return json_encode($rez);
+    }
 }
