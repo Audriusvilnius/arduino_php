@@ -1,5 +1,7 @@
 <?php
-
+ /**
+  * This file is used to get the value of the sensor in the database.
+  */
 class Database
 {
     private $servername = '127.0.0.1';
