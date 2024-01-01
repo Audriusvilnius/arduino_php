@@ -8,15 +8,15 @@
 require __DIR__ . '/Database.php';
 $db = new Database();
 $sensor = [
-    1 => 'status',
-    2 => 'doors',
-    3 => 'windows',
-    4 => 'indoor_gate',
-    5 => 'outdoor_gate',
-    6 => 'motion',
-    7 => 'glass_break',
-    8 => 'perimeter',
-    9 => 'smoke'
+    0 => 'status',
+    1 => 'doors',
+    2 => 'windows',
+    3 => 'indoor_gate',
+    4 => 'outdoor_gate',
+    5 => 'motion',
+    6 => 'glass_break',
+    7 => 'perimeter',
+    8 => 'smoke'
 ];
 
 if (isset($_GET['value']) && isset($_GET['id'])) {
